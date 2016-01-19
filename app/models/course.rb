@@ -1,3 +1,5 @@
 class Course < ActiveRecord::Base
-  attr_accessor :course_num
+  def course_num
+    return dept + " " + num
+  end
 end
