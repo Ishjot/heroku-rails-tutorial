@@ -1,4 +1,12 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="jumbotron">
+      <h1>Welcome to myapp!</h1>
+      <p>Authenticate via one of the social networks to get started.</p>
+    </div>
+
+    <div id="container">
+      <div id="user_nav">
+        <%= link_to "Sign in with Twitter", "/auth/twitter/" %>
+      </div>
